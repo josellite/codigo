@@ -3,6 +3,7 @@
 
 //Board: TTGO LoRa32 -OLEDv1
 
+
 //IMPORTANTE: para la placa LORA-ESP32 con OLED incorporado,
 //de los dos puertos de comunicación serie hardware disponibles del ESP32,
 //para el 2 tenemos el pin RX2 (GPIO16) ocupado por la pantalla OLED
@@ -17,7 +18,10 @@
 //(GPIO13) de la placa.
 
 
-
+//BMP280+MPU y UV por I2C a los pines de LORA-ESP:
+//SCL -> GPIO15
+//SDA -> GPIO04
+//GPS al pin GPIO13
 
 #include <Arduino.h>
 #include <Wire.h>
