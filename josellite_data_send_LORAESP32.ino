@@ -21,7 +21,7 @@
 //BMP280+MPU y UV por I2C a los pines de LORA-ESP:
 //SCL -> GPIO15
 //SDA -> GPIO04
-//GPS al pin GPIO13
+//TX GPS al pin GPIO13
 
 #include <Arduino.h>
 #include <Wire.h>
