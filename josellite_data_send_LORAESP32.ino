@@ -6,10 +6,10 @@
 
 //IMPORTANTE: para la placa LORA-ESP32 con OLED incorporado,
 //de los dos puertos de comunicación serie hardware disponibles del ESP32,
-//para el 2 tenemos el pin RX2 (GPIO16) ocupado por la pantalla OLED
-//y para el 1 (RX1) no tenemos disponible en la placa el GPIO09.
+//para el 2º tenemos el pin RX2 (GPIO16) ocupado por la pantalla OLED
+//y para el 1, el pin RX1 (GPIO09), no está accesible en esta placa.
 //Por lo tanto es necesario reconfigurar, para el 1, el GPIO09 
-//por el GPIO13. Asi, editaremos el archivo HardwareSerial.cpp
+//por el GPIO13 que sí está en la placa (ver pinout). Asi, editaremos el archivo HardwareSerial.cpp
 //de libreria (ruta para MACOS, puede que sea distinta en Windows):
 // /Users/username/Library/Arduino15/packages/
 //esp32/hardware/esp32/1.0.4/cores/esp32/HardwareSerial.cpp
